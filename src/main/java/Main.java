@@ -16,7 +16,7 @@ public class Main {
         }
 
         //Заполнение файла массивом + вывод его размера
-        xo.WriteArray(array);
+        xo.WriteArray(array,"output.txt");
         xo.GetSize("output.txt");
     }
 }

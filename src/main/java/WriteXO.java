@@ -13,8 +13,8 @@ public class WriteXO {
      * Метод для заполнения файла содержимым массива
      * @param arr
      */
-    public void WriteArray(int [] arr){
-        try (DataOutputStream dataOut = new DataOutputStream(new FileOutputStream("output.txt"))) {
+    public void WriteArray(int [] arr, String path){
+        try (DataOutputStream dataOut = new DataOutputStream(new FileOutputStream(path))) {
             for (int i = 0; i < arr.length; i++) {
                 dataOut.writeByte(arr[i]);
             }
